@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>Go</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body class="page">
+        <main>
+            <section class="section hero">
+                <div class="container hero__container">
+                    <h1 class="hero__title">GAME OVER</h1>
+                    <p class="hero__subtitle">Новый формат игр и отдыха</p>
+                </div>
+            </section>
+        
+        <section class="section halls" id="halls">
+            <div class="container">
+                <h2 class="title halls__title">Наши Залы</h2>
+                <ul class="halls-list">
+                    <li class="halls__item halls__item_pic-80s">
+                        <a class="halls__link" href="vibes.html">80's vibes</a>
+                    </li>
+                    <li class="halls__item halls__item_pic-star ">
+                        <a class="halls__link" href="starwars.html">Star wars</a>
+                    </li>
+                    <li class="halls__item halls__item_pic-wild">
+                        <a class="halls__link" href="wildwest.html">Wild west</a>
+                    </li>
+                    <li class="halls__item halls__item_pic-neon">
+                        <a class="halls__link" href="neon.html">Neon style</a>
+                    </li>
+                </гl>
+            </div>
+        </section>
+        
+        <section class="section booking">
+            <div class="container">
+                <h2 class="title booking__title">Забронировать</h2>
+                <form action="jsonplaceholder.typicode.com/posts"
+                        method="POST">
+                    <fieldset class="fieldset">
+                        <input type="radio" name="room" id="room1" value="80-vibes">
+                        <label for="room_80">80's vibes</label>
+                        <input type="radio" name="room" id="room2" value="star-wars">
+                        <label for="room_star">star wars</label>
+                    
+                        <input type="radio" name="room" id="room3" value="wild-west">
+                        <label for="room_wild">wild west</label>
+                    
+                        <input type="radio" name="room" id="room4" value="neon-style">
+                        <label for="room_neon">neon style</label>
+                    
+                    </fieldset>
+                    
+                    <fieldset class="fieldset">
+                        <legend>Собери набор развлечений</legend>
+                        <fieldset>
+                            <legend>Приставка:</legend>
+                            <input type="radio" name="console" id="playstation" value="playstation">
+                            <label for="playstation">PlayStation</label>
+                        
+                            <input type="radio" name="console" id="sega" value="sega">
+                            <label for="sega">Sega Mega Drive</label>
+                        
+                            <input type="radio" name="console" id="x-box" value="x-box">
+                            <label for="x-box">X-box One S</label>
+                        
+                            <input type="radio" name="console" id="dendy" value="dendy">
+                            <label for="dendy">Dendy</label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Настольные игры:</legend>
+                            <input type="checkbox" name="game" id="jenga" value="jenga">
+                            <label for="jenga">Jenga</label>
+                        
+                            <input type="checkbox" name="game" id="monopoly" value="monopoly">
+                            <label for="monopoly">Monopoly</label>
+                        
+                            <input type="checkbox" name="game" id="manchkin" value="manchkin">
+                            <label for="manchkin">Манчкин</label>
+                        
+                            <input type="checkbox" name="game" id="alias" value="alias">
+                            <label for="alias">Alias</label>
+                        
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Дополнительно:</legend>
+                            <input type="checkbox" name="fun" id="Karaoke" value="Karaoke">
+                            <label for="Karaoke">Караоке</label>
+                        
+                            <input type="checkbox" name="fun" id="VR" value="VR">
+                            <label for="VR">VR</label>
+                        
+                        </fieldset>
+                    </fieldset>
+                    
+                    <fieldset class="fieldset">
+                        <legend>Выбери дату и время</legend>
+                        <div>
+                            <label for="date">Дата*</label>
+                            <input type="date" name="date " id="date" title="дд.мм.гггг" required>
+                            <label for="time">Время*</label>
+                            <input type="time" name="=time" id="time" title="--:--" required>
+                            <label for="number-pers">Количество человек*</label>
+                            <input type="number" name="number of persons" id="number-pers" min="1" required>
+                            <label for="name">Имя*</label>
+                            <input type="text" name="name" id="name" required>
+                        
+                            <label for="surname">Фамилия*</label>
+                            <input type="text" name="surname" id="surname" required>
+                            <label for="tel">Номер телефона*</label>
+                            <input type="text" inputmode="tel" id="tel" required title="+7-(_ _ _)-_ _ _-_ _-_ _" pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+                        
+                            <input type="checkbox" name="over-the-ages" id="ages" value="ages">
+                            <label for="ages">Я старше 18 лет</label>
+                        </div>
+                        
+                    </fieldset>
+            
+                    <button type="submit" class="booking__button">Забронировать</button>
+                    <input type="checkbox" name="consent" id="consent" value="consent">
+                    <label for="consent"  class="box-form">Согласие на обработку данных</label>
+                
+                </form>
+            </div>
+        </section>
+
+        <section class="section about" id="about-us">
+            <div class="container">
+                <h2 class="title about__title">О нас</h2>
+                <img src="images/about/photo-about.jpg"
+                    class="about__image" 
+                    alt="Несколько фото с изображением людей в очках виртуальной реальности и других консолей данного пространства"
+                >
+                <!-- <div class="about__image"></div> -->
+                <div class="about__wrapper">
+                    <div class="about__box">
+                        <p class="about__text">Для наших гостей мы создали
+                                концептуально новое игровое пространство виртуально реальности в центральной части города.</p>
+                        <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира</p>
+                    </div>
+                    <blockquote class="about__blockquote">
+                        <p class="about__quote">GAME OVER &mdash;
+                                    это место незабываемых впечатлений</p>
+                        <figure class="about__autor">
+                            <img class= "about__avatar" src="images/blockquote/author.png"
+                                aria-hidden="true"
+                                alt="Аватар автора">
+                            <figcaption class="about__caption">Аркадий Абакшин, создатель игровой территории GAME OVER</figcaption>
+                        </figure>
+                    </blockquote>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section rewiews">
+            <h2 class="title rewiews__title">Отзывы посетителей</h2>
+            <div class="container">
+                <!-- <div class="rewiews__wrapper">
+                    <figure class="rewiews__autor">
+                        <img class= "rewiews__avatar" src="images/rewiews/maks.jpg"
+                            aria-hidden="true"
+                            alt="Аватар автора отзыва">
+                        <figcaption class="rewiews__caption">Макс Самойлов</figcaption>
+                    </figure>
+                    <p class="rewiews__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
+                </div>
+                
+                <div class="rewiews__wrapper">
+                    <figure class="rewiews__autor">
+                        <img class= "rewiews__avatar" src="images/rewiews/oks.jpg"
+                            aria-hidden="true"
+                            alt="Аватар автора отзыва">
+                        <figcaption class="rewiews__caption">Оксана Григорьева</figcaption>
+                    </figure>
+                    <p class="rewiews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
+                </div>
+
+                <div class="rewiews__wrapper">
+                    <figure class="rewiews__autor">
+                        <img class= "rewiews__avatar" src="images/rewiews/nik.jpg"
+                            aria-hidden="true"
+                            alt="Аватар автора отзыва">
+                        <figcaption class="rewiews__caption">Никита Ященко</figcaption>
+                    </figure>
+                    <p class="rewiews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
+                </div> -->
+
+                <ul class="rewiews__list">
+                    <li class="rewiews__element">
+                        <figure class="rewiews__autor">
+                            <img class= "rewiews__avatar" src="images/rewiews/maks.jpg"
+                                aria-hidden="true"
+                                alt="Аватар автора отзыва">
+                            <figcaption class="rewiews__caption">Макс Самойлов</figcaption>
+                        </figure>
+                        <p class="rewiews__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
+                    </li>
+                    <li class="rewiews__element">
+                        <figure class="rewiews__autor">
+                            <img class= "rewiews__avatar" src="images/rewiews/oks.jpg"
+                                aria-hidden="true"
+                                alt="Аватар автора отзыва">
+                            <figcaption class="rewiews__caption">Оксана Григорьева</figcaption>
+                        </figure>
+                        <p class="rewiews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
+                    </li>
+                    <li class="rewiews__element">
+                        <figure class="rewiews__autor">
+                            <img class= "rewiews__avatar" src="images/rewiews/nik.jpg"
+                                aria-hidden="true"
+                                alt="Аватар автора отзыва">
+                            <figcaption class="rewiews__caption">Никита Ященко</figcaption>
+                        </figure>
+                    <p class="rewiews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
+                </li>
+                        
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="section questions">
+            <div class="container">
+                <h2 class="title questions__title">Частые вопросы</h2>
+                <ul>
+                    <li class="questions__element">Можно ли забронировать комнату онлайн?</li>
+                    <li class="questions__element">Могут ли мне вернуть деньги за бронь?</li>
+                    <li class="questions__element">Какая комната самая популярная?</li>
+                    <li class="questions__element">Как получить VIP карту?</li>
+                    <li class="questions__element">Какая комната самая популярная</li>
+                </ul>
+            </div>
+        </section>
+
+        </main>  
+
+        <footer id="contact" class="section footer">
+            <div class="container">
+                <p class="title footer__title">Контакты</p>
+                <!-- <address> -->
+                    <a class="footer__contact footer__contact_icon-adress">г. Москва </br> ул. Аквамарина, 16</p>
+                    <a class="footer__contact footer__contact_icon-phone" href="tel:89509302893" >8 (950) 930 - 28 - 93</a>
+                    <a class="footer__contact footer__contact_icon-email" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+                <!-- </address> -->
+                <ul class="list-social">
+                    <li class="list-social__item"><a class="list-social__link" href="https://vk.com/GameOver" target="_blank"><img src="images/social/social-vk.svg" alt="vkontakte-icon" border></a></li>
+                    <li class="list-social__item"><a class="list-social__link" href="https://telegram.org" target="_blank"><img src="images/social/social_telegram.svg" alt="telegram-icon"></a></li>
+                    <li class="list-social__item"><a class="list-social__link" href="http://stumbleupon.com" target="_blank"><img src="images/social/social-stumbleupon.svg" alt="telegram-icon"></a></li>
+                    <li class="list-social__item"><a class="list-social__link" href="https://ru.pinterest.com/" target="_blank"><img src="images/social/social-pinterest.svg" alt="telegram-icon"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

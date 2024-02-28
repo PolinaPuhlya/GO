@@ -1,0 +1,348 @@
+.questions__element {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 46px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.questions__element:after {
+    content: "";
+    display: inline-block;
+    float: right;
+    width: 46px;
+    height: 46px;
+    background-size: contain;
+}
+
+.questions__element:nth-child(even) {
+    color: #fff ;
+    background-color: #440f51 ;
+}
+
+.questions__element:nth-child(odd) {
+    background-color: #fff;
+    color: #1C1A1A;
+}
+
+.questions__element:nth-child(odd):after {
+    background-image:url("../images/img-open/open-purple.svg");
+}
+
+.questions__element:nth-child(even):after {
+    background-image:url("../images/img-open/open.svg");
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 150px;
+    letter-spacing: -0.1em;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero__subtitle {
+    font-size: 28px;
+    line-height: 50px;
+    padding-left: 100px;
+    position: relative;
+    margin: 0;
+}
+
+.section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.hero {
+    padding-top: 146px;
+}
+
+.hero__container {
+    min-height: 827px;
+    position: relative; 
+}
+
+.hero__container:after {
+    content: " ";
+    background-image: url("../images/hero/bg-hero.png");
+    position:absolute;
+    right: 30px;
+    bottom: 0;
+    background-size:contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    min-width: 675px;
+    min-height: 762px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.halls__title {
+    margin-bottom: 60px;
+}
+
+.questions__title {
+    margin-bottom: 40px;
+}
+
+.footer__title {
+    margin-bottom: 54px;
+}
+
+.halls-list {
+    list-style: none inside;
+    padding: 0;
+    margin: -10px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.halls-list::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.halls__item {
+    display: inline-block;
+    background-position: center center;
+    padding: 135px 0 134px;
+    margin: 10px;
+    background-size: cover;
+    max-width: calc(50% - 20px);
+    width: 100%;
+}
+
+
+
+.halls__item_pic-80s {
+    background-image: url("../images/halls/80s-vibes-bg.jpg");
+}
+
+.halls__item_pic-star {
+    background-image: url("../images/halls/star-wars-bg.jpg");
+}
+
+.halls__item_pic-wild {
+    background-image: url("../images/halls/wild-west-bg.jpg");
+}
+
+.halls__item_pic-neon {
+    background-image: url("../images/halls/neon-bg.jpg");
+}
+
+.halls__link {
+    color: inherit;
+    font-weight: 700;
+    line-height: 80px;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.about__box {
+    font-size: 20px;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.about__text {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.about__text:last-child {
+    margin-bottom: 0;
+}
+
+.about__blockquote {
+    position: relative;
+    padding-left: 40px;
+    text-align: right;
+    margin: 0;
+}
+
+.about__quote {
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: pre-line;
+    margin: 0 0 40px 0;
+}
+
+.about__quote::after {
+    content: ' ” ';
+    font-weight: 900;
+    color: #6C0287;
+}
+
+.about__quote::before {
+    content: ' “ ';
+    position: absolute;
+    left: 0;
+    top: -8px;
+    font-weight: 900;
+    color: #6C0287;
+}
+
+.about__autor {
+    max-width: 410px;
+    text-align: left;
+    vertical-align: middle;
+    padding-right: 50px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 50px;
+}
+
+.about__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.about__caption {
+    font-size: 20px;
+    max-width: 240px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.fieldset {
+    font-size: 18px;
+}
+
+.booking__button {
+    color: #1B1A1B;
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.about__image {
+    display: inline-block;
+    min-height: 596px;
+    vertical-align: top;
+    width: calc(100% - 586px);
+    max-width: 51%;
+    margin-right: 80px;
+    object-fit: contain;
+}
+
+.about__wrapper {
+    display: inline-block;
+    max-width: 487px;
+    vertical-align: top
+}
+
+.rewiews__list {
+    margin: 0 auto;
+    max-width: 980px;
+    font-size: 0;
+}
+
+.rewiews__element:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.rewiews__autor {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.rewiews__avatar {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 11px;
+}
+
+.rewiews__caption {
+    text-align: center;
+    font-size: 20px;
+}
+
+.rewiews__text {
+    display: inline-block;
+    max-width: calc(100% - 300px);
+    vertical-align: top;
+    padding-top: 52px;
+    font-size: 20px;
+}
+
+.footer__contact {
+    font-size: 24px;
+    background-size: 32px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    padding-left: 55px;
+}
+
+.footer__contact_icon-adress {
+    background-image: url("../images/social/location.svg");
+    background-position-x: left;
+    background-position-y: center;
+    margin-top: 0;
+    margin-bottom: 35px;
+    max-width: 300px;
+}
+
+.footer__contact_icon-phone {
+    background-image: url("../images/social/phone-call.svg");
+    margin-bottom: 11px;
+}
+
+.footer__contact_icon-email {
+    background-image: url("../images/social/email.svg");
+    margin-bottom: 39px;
+}
+
+.list-social {
+    list-style: none;
+    font-size: 0;
+    line-height: 0;
+    padding:0;
+}
+
+.list-social__item {
+    display: inline-block;
+}
+
+.list-social__item:not(:last-child) {
+    margin-right: 26px;
+}
+
+.list-social__link {
+    display: block;
+}
