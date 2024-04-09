@@ -699,3 +699,8 @@ justify-content: center;}
     flex-direction: column;
     row-gap: 155px;
 }
+
+.footer__img {
+    width: calc(100% - 500px);
+    object-fit: contain;
+}
