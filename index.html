@@ -17,7 +17,7 @@
     <body class="page">
         <header class="header">
             <div class="container">
-                <div class="header-wrap">
+                <nav class="navigation">
                     <img class="logo"
                         src="images/logo/logo.png"
                         alt="Логотип в виде слова GO заглавными буквами">
@@ -39,7 +39,7 @@
                         </li>
                     </ul>
                     <button class="header__button" type="button">ЗАКАЗАТЬ ЗВОНОК</button>
-                </div>
+                </nav>
             </div>
         </header>
 
@@ -49,10 +49,12 @@
                     <h1 class="hero__title">GAME OVER</h1>
                     <p class="hero__subtitle">Новый формат игр и отдыха</p>
                     <div class="hero__wrap">
-                        <p class="hero__text"><strong class="hero__text-strong">4</strong> Тематическиx зала</p>
-                        <p class="hero__text"><strong class="hero__text-strong hero__text-strong_style-size">NEW</strong>Новейшая аппаратура</p>
+                        <p class="hero__text"><span class="hero__text-strong">4</span> Тематическиx зала</p>
+                        <p class="hero__text"><span class="hero__text-size">NEW</span>Новейшая аппаратура</p>
                     </div>
-                    <button class="hero__button-booking" type="button">Забронировать</button>
+                    <a class="hero__link-booking" href="#booking">Забронировать</a>
+
+                    <!-- <button class="hero__button-booking" type="button">Забронировать</button> -->
                     <a class="hero__link" href="#rest">
                         <img src="images/down.png" alt="down-button" class="hero__link-img">
                     </a>
@@ -155,62 +157,45 @@
                             <legend class="booking__fieldset-title">Собери набор развлечений</legend>
                             <fieldset class="booking__fieldset-games">
                                 <legend class="booking__fieldset-subtitle">Приставка:</legend>
-                                <div class="booking__wrap-games">
-                                    <input type="radio" name="console" id="playstation" value="playstation" class="booking__radio-games">
-                                    <label for="playstation">PlayStation</label>
-                                </div>
-                            
-                                <div class="booking__wrap-games">
-                                    <input type="radio" name="console" id="sega" value="sega" class="booking__radio-games">
-                                    <label for="sega">Sega Mega Drive</label>
-                                </div>
-                            
-                                <div class="booking__wrap-games">
-                                    <input type="radio" name="console" id="x-box" value="x-box" class="booking__radio-games">
-                                    <label for="x-box">X-box One S</label>
-                                </div>
-                            
-                                <div class="booking__wrap-games">
-                                    <input type="radio" name="console" id="dendy" value="dendy" class="booking__radio-games">
-                                    <label for="dendy">Dendy</label>
-                                </div>
+                                    <label for="playstation">
+                                        <input type="radio" name="console" id="playstation" value="playstation" class="booking__radio-games">
+                                    PlayStation</label>
+                                    <label for="sega">
+                                        <input type="radio" name="console" id="sega" value="sega" class="booking__radio-games">
+                                        Sega Mega Drive</label>
+                                    <label for="x-box">
+                                        <input type="radio" name="console" id="x-box" value="x-box" class="booking__radio-games">
+                                    X-box One S</label>
+                                    <label for="dendy">
+                                        <input type="radio" name="console" id="dendy" value="dendy" class="booking__radio-games">
+                                    Dendy</label>
                             </fieldset>
 
                             <fieldset class="booking__fieldset-games">
                                 <legend class="booking__fieldset-subtitle">Настольные игры:</legend>
-                                <div class="booking__wrap-games">
+                                <label for="jenga">
                                     <input type="checkbox" name="game" id="jenga" value="jenga" class="booking__checkbox-games">
-                                    <label for="jenga">Jenga</label>
-                                </div>
-                            
-                                <div class="booking__wrap-games">
+                                Jenga</label>
+                                <label for="monopoly">
                                     <input type="checkbox" name="game" id="monopoly" value="monopoly" class="booking__checkbox-games">
-                                    <label for="monopoly">Monopoly</label>
-                                </div>
-                            
-                                <div class="booking__wrap-games">
+                                Monopoly</label>
+                                <label for="manchkin">
                                     <input type="checkbox" name="game" id="manchkin" value="manchkin" class="booking__checkbox-games">
-                                    <label for="manchkin">Манчкин</label>
-                                </div>
-                            
-                                <div class="booking__wrap-games">
+                                Манчкин</label>
+                                <label for="alias">
                                     <input type="checkbox" name="game" id="alias" value="alias" class="booking__checkbox-games">
-                                    <label for="alias">Alias</label>
-                                </div>
+                                Alias</label>
                             
                             </fieldset>
 
                             <fieldset class="booking__fieldset-games">
                                 <legend class="booking__fieldset-subtitle">Дополнительно:</legend>
-                                <div class="booking__wrap-games">
+                                <label for="Karaoke">
                                     <input type="checkbox" name="fun" id="Karaoke" value="Karaoke" class="booking__checkbox-games">
-                                    <label for="Karaoke">Караоке</label>
-                                </div>
-                            
-                                <div class="booking__wrap-games">
+                                Караоке</label>
+                                <label for="VR">
                                     <input type="checkbox" name="fun" id="VR" value="VR" class="booking__checkbox-games">
-                                    <label for="VR">VR</label>
-                                </div>
+                                VR</label>
                             
                             </fieldset>
                         </fieldset>
@@ -224,7 +209,7 @@
                                         <!-- <label class="label-abs" for="date">Дата</label> -->
                                         <input class="booking__fieldset-input-time-data" type="date" name="date " id="date" required>
                                         <!-- <label class="label-abs" for="time">Время</label> -->
-                                        <input class="booking__fieldset-nput-time-data" type="time" name="=time"  id="time" required>
+                                        <input class="booking__fieldset-input-time-data" type="time" name="=time"  id="time" required>
                                     </div>
                                     <!-- <label for="number-pers">Количество человек</label> -->
                                     <input class="booking__fieldset-input" type="number" placeholder="Сколько человек" name="number of persons" id="number-pers" title="Сколько человек" min="1" required>

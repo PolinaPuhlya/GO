@@ -60,6 +60,7 @@
 .hero__container {
     min-height: 827px;
     position: relative; 
+    padding-bottom: 30px;
 }
 
 .hero__container:after {
@@ -342,10 +343,10 @@
 }
 
 .header {
-    padding-top: 30px;
+    padding: 30px 0 20px;
 }
 
-.header-wrap {
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -389,13 +390,15 @@
     font-size: 100px;
     font-weight: 900;
     line-height: 141.02px;
-    text-align: left;
     color: #CD06FF;
 }
 
-.hero__text-strong_style-size {
+.hero__text-size {
     font-size: 75px;
     line-height: 105.76px;
+    color: #CD06FF;
+    font-weight: 900;
+    font-variant-caps: all-small-caps;
 }
 
 .hero__wrap {
@@ -403,9 +406,12 @@
     gap: 40px;
     align-items: flex-end;
     margin-bottom: 150px;
+    position: relative;
+    z-index: 20;
 }
 
-.hero__button-booking {
+
+.hero__link-booking {
     color: #fff;
     background-color: #6C0287;
     box-shadow: 3px 3px 5px 5px rgba(68, 15, 81, 0.6),
@@ -416,12 +422,29 @@
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
+    position: relative;
+    z-index: 10;
 }
+
+/* .hero__button-booking {
+    color: #fff;
+    background-color: #6C0287;
+    box-shadow: 3px 3px 5px 5px rgba(68, 15, 81, 0.6),
+                -3px -3px 5px 5px rgba(68, 15, 81, 0.6);
+    border-radius: 10px;
+    padding: 25px 69px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+} */
 
 .hero__link-img {
     position: absolute;
-    top: 635px;
-    left: 570px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom:0 calc(100% - 120px);
     z-index: 3;
 }
 
@@ -443,13 +466,13 @@
 .rest__img {
     display: flex;
     /* justify-content: center; */
-    align-items: center;
+    align-items: flex-start;
     content: " ";
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 228px;
-    padding: 146px 40px 0 ;
+    padding: 166px 40px 6px ;
 }
 
 .rest__img_pic-vr {
@@ -514,6 +537,7 @@
 .booking__fieldset-games {
     display: flex;
     flex-direction: column;
+    
     gap: 20px;
     min-width: 300px;
     font-size: 22px;
@@ -522,6 +546,11 @@
     border: 0 none;
     padding: 0;
 }
+
+/* .booking__label-games {
+    vertical-align: middle;
+    
+} */
 
 .booking__label {
     font-size: 30px;
@@ -569,13 +598,19 @@
 }
 
 .booking__radio-games {
-    transform: scale(2);
+    width: 27px;
+    height: 27px;
     margin-right: 12px;
+    vertical-align:bottom;
 }
 
+
 .booking__checkbox-games {
-    transform: scale(2);
+    width: 25px;
+    height: 25px;
     margin-right: 12px;
+    display: inline-block;  /* нужно ли это св-во оставить??? без него ничего не меняется */
+    vertical-align: bottom;
 }
 
 .booking__fieldset-wrap {
@@ -705,5 +740,6 @@ justify-content: center;}
 
 .footer__img {
     width: calc(100% - 500px);
-    object-fit: contain;
+    object-fit: cover;
+    object-position: left;
 }
