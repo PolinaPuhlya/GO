@@ -410,7 +410,6 @@
     z-index: 20;
 }
 
-
 .hero__link-booking {
     color: #fff;
     background-color: #6C0287;
@@ -425,19 +424,6 @@
     position: relative;
     z-index: 10;
 }
-
-/* .hero__button-booking {
-    color: #fff;
-    background-color: #6C0287;
-    box-shadow: 3px 3px 5px 5px rgba(68, 15, 81, 0.6),
-                -3px -3px 5px 5px rgba(68, 15, 81, 0.6);
-    border-radius: 10px;
-    padding: 25px 69px;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 30px;
-    text-transform: uppercase;
-} */
 
 .hero__link-img {
     position: absolute;
@@ -465,7 +451,6 @@
 
 .rest__img {
     display: flex;
-    /* justify-content: center; */
     align-items: flex-start;
     content: " ";
     background-repeat: no-repeat;
@@ -509,7 +494,6 @@
 }
 
 .booking__fieldset {
-    /* position: relative; */
     flex-wrap: wrap;
     gap: 60px;
     display: flex;
@@ -528,8 +512,6 @@
 }
 
 .booking__fieldset_style-content {
-    /* display: flex;
-    flex-direction: row; */
     justify-content: flex-end;
     gap: 100px;
 }
@@ -546,11 +528,6 @@
     border: 0 none;
     padding: 0;
 }
-
-/* .booking__label-games {
-    vertical-align: middle;
-    
-} */
 
 .booking__label {
     font-size: 30px;
@@ -604,7 +581,6 @@
     vertical-align:bottom;
 }
 
-
 .booking__checkbox-games {
     width: 25px;
     height: 25px;
@@ -613,23 +589,21 @@
     vertical-align: bottom;
 }
 
+.booking__fieldset_stele-center {
+    justify-content: center;
+}
+
 .booking__fieldset-wrap {
     display: flex;
     flex-direction: row;
     gap: 50px;
     max-width: 980px;
     align-items: flex-end;
-    /* text-align: center; */
 }
-
-.booking__fieldset_stele-center {
-justify-content: center;}
-
 
 .booking__fieldset-wrap-input {
     display: flex;
     flex-basis: 980px;
-    /* margin: 0 auto; */
     flex-direction: row;
     align-items: end;
     justify-content:space-between;
@@ -652,12 +626,14 @@ justify-content: center;}
     justify-content: space-between;
 }
 
-.booking__fieldset-input-time-data {
-    flex-basis: 134px;
-    font-size: 18px;
-    line-height: 1.334;
-    padding: 11px 0;
-    color: #211E1E;
+.booking__fieldset-input::-webkit-datetime-edit {
+    unicode-bidi: normal;
+    font-size: 16px;
+    line-height: 0.5;
+}
+
+.booking__fieldset-input::-webkit-calendar-picker-indicator {
+    width: 20px;
 }
 
 .booking__fieldset-wrap-name-tel {
@@ -684,8 +660,7 @@ justify-content: center;}
 }
 
 .booking__fieldset-wrap-button {
-    padding: 0 100px;
-    text-align: right;
+    margin-left: auto;
 }
 
 .booking__fieldset-label {
@@ -699,16 +674,24 @@ justify-content: center;}
 .booking__fieldset-input {
     display: block;
     font-size: 22px;
-    line-height: 1;
+    line-height: 1.267;
     display: block;
     width: 100%;
     resize: none;
-    /* border-radius: 6px;
-    background-color:#F2F0F9;
-    border: #F2F0F9; */
     padding: 11px;
 }
 
+.booking__fieldset-input_style-shrink {
+    width: 134px;
+    max-height: 52px;
+}
+
+
+.booking__fieldset-all-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 .footer {
     background: linear-gradient(#1B1A1B, #370A37);
     border-radius: 6px;

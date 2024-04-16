@@ -202,19 +202,18 @@
                         
                         <fieldset class="booking__fieldset booking__fieldset_stele-center">
                             <legend class="booking__fieldset-title">Выбери дату и время</legend>
-                            <div class="booking__fieldset-wrap">
-
-                                <div class="booking__fieldset-wrap-input-time-data-numb">
-                                    <div class="booking__fieldset-wrap-input-time-data">
-                                        <!-- <label class="label-abs" for="date">Дата</label> -->
-                                        <input class="booking__fieldset-input-time-data" type="date" name="date " id="date" required>
-                                        <!-- <label class="label-abs" for="time">Время</label> -->
-                                        <input class="booking__fieldset-input-time-data" type="time" name="=time"  id="time" required>
+                            <div class="booking__fieldset-all-wrap">
+                                <div class="booking__fieldset-wrap">
+                                    <div class="booking__fieldset-wrap-input-time-data-numb">
+                                        <div class="booking__fieldset-wrap-input-time-data">
+                                            <!-- <label class="label-abs" for="date">Дата</label> -->
+                                            <input class="booking__fieldset-input booking__fieldset-input_style-shrink" type="date" name="date " id="date" required>
+                                            <!-- <label class="label-abs" for="time">Время</label> -->
+                                            <input class="booking__fieldset-input booking__fieldset-input_style-shrink" type="time" name="=time"  id="time" required>
+                                        </div>
+                                        <!-- <label for="number-pers">Количество человек</label> -->
+                                        <input class="booking__fieldset-input" type="number" placeholder="Сколько человек" name="number of persons" id="number-pers" title="Сколько человек" min="1" required>
                                     </div>
-                                    <!-- <label for="number-pers">Количество человек</label> -->
-                                    <input class="booking__fieldset-input" type="number" placeholder="Сколько человек" name="number of persons" id="number-pers" title="Сколько человек" min="1" required>
-                                </div>
-
                                     <div class="booking__fieldset-wrap-name-tel">
                                         <div>
                                             <label for="name" class="booking__fieldset-label">Имя</label>
@@ -225,7 +224,6 @@
                                             <input type="text" class="booking__fieldset-input" name="surname" id="surname" required>
                                         </div>
                                     </div>
-
                                     <div class="booking__fieldset-wrap-name-tel booking__fieldset-wrap-name-tel_style-basis">
                                         <div>
                                             <label class="booking__fieldset-label" for="tel">Номер телефона</label>
@@ -235,12 +233,15 @@
                                             <input type="text" class="booking__fieldset-input" inputmode="tel" id="mail" required>
                                         </div>
                                     </div>
-                                
+
+                                </div>
+
+                                <div class="booking__fieldset-wrap-button"><button type="submit" class="booking__fieldset-button">Забронировать</button></div>
+   
                             </div>
-                            
+
                         </fieldset>
                 
-                        <div class="booking__fieldset-wrap-button"><button type="submit" class="booking__fieldset-button">Забронировать</button></div>
                     
                     
                     </form>
