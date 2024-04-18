@@ -293,6 +293,7 @@
     background-repeat: no-repeat;
     font-weight: 700;
     padding-left: 55px;
+    font-style: normal;
 }
 
 .footer__contact_icon-adress {
@@ -416,16 +417,22 @@
     z-index: 10;
 }
 
-.hero__link-img {
+.hero__link {
     position: absolute;
-    left: 46.5%;
-    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 90px;
     z-index: 3;
 }
 
-.labelw {
-    max-width: ;
+.hero__link-img {
+    border-radius: 50%;
 }
+
+/* .hero__link:hover .hero__link-img {
+    background-color: #CD06FF;
+} */
+
 .rest__title {
     max-width: 980px;
     margin: 0 auto 50px; /* Касаемо margin- это костылище??? */
@@ -508,13 +515,14 @@
 
 
 
-.booking__wrap-radio {
-	display: inline-block;
-}
 
-.booking__radio-hall {
+/* .booking__wrap-radio {
+	display: inline-block;
+} */
+
+/* .booking__radio-hall {
 	display: none;
-}
+} */
 
 .booking__label-hall {
 	display: inline-block;
@@ -557,6 +565,7 @@
 
 .booking__fieldset-games {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 20px;
     min-width: 300px;
@@ -574,9 +583,9 @@
     margin-bottom: 23px;
 }
 
-.booking__label-games {
+/* .booking__label-games {
     width: max-content;
-}
+} */
 
 .booking__radio-games {
     width: 27px;
@@ -669,11 +678,12 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 28px;
-    padding: 16px 50px;
+    padding: 16px ;
     border-radius: 10px;
     background-color: #FFFFFF;
     text-transform: uppercase;
     max-width: 280px;
+    width: 100%;
 }
 
 .booking-wrap-all {
