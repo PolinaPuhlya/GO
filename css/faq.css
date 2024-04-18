@@ -511,9 +511,11 @@
 .booking__wrap-radio {
 	display: inline-block;
 }
+
 .booking__radio-hall {
 	display: none;
 }
+
 .booking__label-hall {
 	display: inline-block;
 	cursor: pointer;
@@ -525,7 +527,6 @@
     text-align: center;
     color: #000000;
     background-color: #fff;
-	/* border: 1px solid #999; */
 	border-radius: 8px;
 	user-select: none;
     width: 250px;
@@ -537,11 +538,12 @@
 	background: #4249d0;
     color: #fff;
 }
- 
+
 /* Hover */
 .booking__label-hall:hover {
 	color: #666;
 }
+
 /* Disabled */
 .booking__radio-hall:disabled + .booking__label-hall {
 	background: #efefef;
