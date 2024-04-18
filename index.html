@@ -132,23 +132,44 @@
                         <fieldset class="booking__fieldset">
                             <legend class="booking__fieldset-title">Выбери зал</legend>
 
+                            <!-- <label for="" class="booking__label-hall">80's vibes 
+                                <input type="radio" class="booking__radio-hall" name="hall" id="" value="80vibes">
+                            </label>
+                            
+                           
+
+                            <label for="" class="booking__label-hall">star wars
+                                <input type="radio" class="booking__radio-hall" name="hall" id="" value="80vibes">
+                            </label>
+
+                            <label for="" class="booking__label-hall">wild west
+                                <input type="radio" class="booking__radio-hall" name="hall" id="" value="80vibes">
+                            </label>
+
+                            <label for="" class="booking__label-hall">neon style
+                                <input type="radio" class="booking__radio-hall" name="hall" id="" value="80vibes">
+                            </label>  -->
+
+
+
+
                             <div class="booking__wrap-radio">
-                                <input type="radio" name="room" id="room_80" value="80-vibes" class="booking__radio">
-                                <label for="room_80" class="booking__label">80's vibes</label>
+                                <input type="radio" name="room" id="room_80" value="80-vibes" class="booking__radio-hall">
+                                <label for="room_80" class="booking__label-hall">80's vibes</label>
                             </div>
                             <div class="booking__wrap-radio">
-                                <input type="radio" name="room" id="room_star" value="star-wars" class="booking__radio">
-                                <label for="room_star" class="booking__label">star wars</label>
+                                <input type="radio" name="room" id="room_star" value="star-wars" class="booking__radio-hall">
+                                <label for="room_star" class="booking__label-hall">star wars</label>
                             </div>
                         
                             <div class="booking__wrap-radio">
-                                <input type="radio" name="room" id="room_wild" value="wild-west" class="booking__radio">
-                                <label for="room_wild" class="booking__label">wild west</label>
+                                <input type="radio" name="room" id="room_wild" value="wild-west" class="booking__radio-hall">
+                                <label for="room_wild" class="booking__label-hall">wild west</label>
                             </div>
                         
                             <div class="booking__wrap-radio">
-                                <input type="radio" name="room" id="room_neon" value="neon-style" class="booking__radio">
-                                <label for="room_neon" class="booking__label">neon style</label>
+                                <input type="radio" name="room" id="room_neon" value="neon-style" class="booking__radio-hall">
+                                <label for="room_neon" class="booking__label-hall">neon style</label>
                             </div>
                         
                         </fieldset>
@@ -157,32 +178,32 @@
                             <legend class="booking__fieldset-title">Собери набор развлечений</legend>
                             <fieldset class="booking__fieldset-games">
                                 <legend class="booking__fieldset-subtitle">Приставка:</legend>
-                                    <label for="playstation">
+                                    <label for="playstation" class="booking__label-games">
                                         <input type="radio" name="console" id="playstation" value="playstation" class="booking__radio-games">
                                     PlayStation</label>
-                                    <label for="sega">
+                                    <label for="sega" class="booking__label-games">
                                         <input type="radio" name="console" id="sega" value="sega" class="booking__radio-games">
                                         Sega Mega Drive</label>
-                                    <label for="x-box">
+                                    <label for="x-box" class="booking__label-games">
                                         <input type="radio" name="console" id="x-box" value="x-box" class="booking__radio-games">
                                     X-box One S</label>
-                                    <label for="dendy">
+                                    <label for="dendy" class="booking__label-games">
                                         <input type="radio" name="console" id="dendy" value="dendy" class="booking__radio-games">
                                     Dendy</label>
                             </fieldset>
 
                             <fieldset class="booking__fieldset-games">
                                 <legend class="booking__fieldset-subtitle">Настольные игры:</legend>
-                                <label for="jenga">
+                                <label for="jenga" class="booking__label-games">
                                     <input type="checkbox" name="game" id="jenga" value="jenga" class="booking__checkbox-games">
                                 Jenga</label>
-                                <label for="monopoly">
+                                <label for="monopoly" class="booking__label-games">
                                     <input type="checkbox" name="game" id="monopoly" value="monopoly" class="booking__checkbox-games">
                                 Monopoly</label>
-                                <label for="manchkin">
+                                <label for="manchkin" class="booking__label-games">
                                     <input type="checkbox" name="game" id="manchkin" value="manchkin" class="booking__checkbox-games">
                                 Манчкин</label>
-                                <label for="alias">
+                                <label for="alias" class="booking__label-games">
                                     <input type="checkbox" name="game" id="alias" value="alias" class="booking__checkbox-games">
                                 Alias</label>
                             
@@ -190,19 +211,20 @@
 
                             <fieldset class="booking__fieldset-games">
                                 <legend class="booking__fieldset-subtitle">Дополнительно:</legend>
-                                <label for="Karaoke">
+                                <label for="Karaoke" class="booking__label-games">
                                     <input type="checkbox" name="fun" id="Karaoke" value="Karaoke" class="booking__checkbox-games">
                                 Караоке</label>
-                                <label for="VR">
+                                <label for="VR" class="booking__label-games">
                                     <input type="checkbox" name="fun" id="VR" value="VR" class="booking__checkbox-games">
                                 VR</label>
                             
                             </fieldset>
                         </fieldset>
                         
-                        <fieldset class="booking__fieldset booking__fieldset_stele-center">
+                        <fieldset class="booking__fieldset booking__fieldset_style-center">
                             <legend class="booking__fieldset-title">Выбери дату и время</legend>
-                            <div class="booking__fieldset-all-wrap">
+                            <!-- <div class="booking__fieldset-all-wrap"> -->
+                            <div class="booking-wrap-all">
                                 <div class="booking__fieldset-wrap">
                                     <div class="booking__fieldset-wrap-input-time-data-numb">
                                         <div class="booking__fieldset-wrap-input-time-data">
@@ -233,17 +255,13 @@
                                             <input type="text" class="booking__fieldset-input" inputmode="tel" id="mail" required>
                                         </div>
                                     </div>
-
                                 </div>
 
-                                <div class="booking__fieldset-wrap-button"><button type="submit" class="booking__fieldset-button">Забронировать</button></div>
-   
+                                <button type="submit" class="booking__button">Забронировать</button>
                             </div>
 
                         </fieldset>
-                
-                    
-                    
+
                     </form>
                 </div>
             </section>
@@ -354,9 +372,9 @@
                     </div>
                     <div class="footer__address">
                         <p class="footer__text">© Game Over, 2022</p>
-                        <div>
-                            <p class="footer__text">Design by Anastasia Ilina</p>
-                            <p class="footer__text">ilina9825@gmail.com</p>
+                        <div class="footer__wrap-link">
+                            <a href="https://telegram.im/@Anastasia Ilina" class="footer__link" target="_blank">Design by Anastasia Ilina</a>
+                            <a href="mailto:ilina9825@gmail.com" class="footer__link">ilina9825@gmail.com</a>
                         </div>
                     </div>
                 </div>

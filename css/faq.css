@@ -231,15 +231,6 @@
     font-size: 18px;
 }
 
-.booking__button {
-    color: #1B1A1B;
-    background-color: #FFFFFF;
-    padding: 5px 10px;
-    border: 0;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
 .about__image {
     display: inline-block;
     min-height: 596px;
@@ -427,13 +418,14 @@
 
 .hero__link-img {
     position: absolute;
-    margin: auto;
-    right: 0;
-    left: 0;
-    bottom:0 calc(100% - 120px);
+    left: 46.5%;
+    bottom: 120px;
     z-index: 3;
 }
 
+.labelw {
+    max-width: ;
+}
 .rest__title {
     max-width: 980px;
     margin: 0 auto 50px; /* Касаемо margin- это костылище??? */
@@ -499,8 +491,11 @@
     display: flex;
     justify-content: space-between;
     border: 0 none;
-    margin-bottom: 60px;
     padding: 0;
+}
+
+.booking__fieldset:not(:last-child) {
+    margin-bottom: 60px;
 }
 
 .booking__fieldset-title {
@@ -511,6 +506,48 @@
     font-weight: 700;
 }
 
+
+
+.booking__wrap-radio {
+	display: inline-block;
+}
+.booking__radio-hall {
+	display: none;
+}
+.booking__label-hall {
+	display: inline-block;
+	cursor: pointer;
+	padding: 7px 15px 8px;
+	font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    background-color: #fff;
+	/* border: 1px solid #999; */
+	border-radius: 8px;
+	user-select: none;
+    width: 250px;
+    height: 55px; 
+}
+
+/* Checked */
+.booking__radio-hall:checked + .booking__label-hall {
+	background: #4249d0;
+    color: #fff;
+}
+ 
+/* Hover */
+.booking__label-hall:hover {
+	color: #666;
+}
+/* Disabled */
+.booking__radio-hall:disabled + .booking__label-hall {
+	background: #efefef;
+	color: #666;
+}
+
 .booking__fieldset_style-content {
     justify-content: flex-end;
     gap: 100px;
@@ -519,7 +556,6 @@
 .booking__fieldset-games {
     display: flex;
     flex-direction: column;
-    
     gap: 20px;
     min-width: 300px;
     font-size: 22px;
@@ -529,49 +565,15 @@
     padding: 0;
 }
 
-.booking__label {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 40px;
-    text-align: center;
-}
-
-.booking__wrap-radio{
-    display: inline-block;
-    width: 250px;
-    height: 55px;
-}
-
-.booking__radio{
-    display: none;
-    /* flex-basis: 250px; */
-}
-
-/* Костыли кастылье */
-.booking__label {
-    box-sizing: content-box;
-    width: 220px;           Костыли кастылье
-    height: 40px;
-    display: inline-block;
-	cursor: pointer;
-	padding: 7px 15px 8px;
-	line-height: 34px;
-	border-radius: 8px;
-	user-select: none;
-    color: #000000;
-    background-color: #fff;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 40px;
-}
-
 .booking__fieldset-subtitle {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     margin-bottom: 23px;
+}
 
+.booking__label-games {
+    width: max-content;
 }
 
 .booking__radio-games {
@@ -589,7 +591,7 @@
     vertical-align: bottom;
 }
 
-.booking__fieldset_stele-center {
+.booking__fieldset_style-center {
     justify-content: center;
 }
 
@@ -600,16 +602,6 @@
     max-width: 980px;
     align-items: flex-end;
 }
-
-.booking__fieldset-wrap-input {
-    display: flex;
-    flex-basis: 980px;
-    flex-direction: row;
-    align-items: end;
-    justify-content:space-between;
-    gap: 50px;
-}
-
 
 .booking__fieldset-wrap-input-time-data-numb {
     display: flex;
@@ -626,6 +618,11 @@
     justify-content: space-between;
 }
 
+.booking__fieldset-input_style-shrink {
+    width: 134px;
+    max-height: 52px;
+}
+
 .booking__fieldset-input::-webkit-datetime-edit {
     unicode-bidi: normal;
     font-size: 16px;
@@ -634,41 +631,6 @@
 
 .booking__fieldset-input::-webkit-calendar-picker-indicator {
     width: 20px;
-}
-
-.booking__fieldset-wrap-name-tel {
-    display: flex;
-    flex-basis: 300px;
-    flex-direction: column;
-    gap: 14px; 
-}
-
-.booking__fieldset-wrap-name-tel_style-basis {
-    flex-basis: 280px;
-}
-
-.booking__fieldset-button {
-    color: #6C0287;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 28px;
-    padding: 16px 50px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    text-transform: uppercase;
-    
-}
-
-.booking__fieldset-wrap-button {
-    margin-left: auto;
-}
-
-.booking__fieldset-label {
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    margin-bottom: 6px;
 }
 
 .booking__fieldset-input {
@@ -681,17 +643,44 @@
     padding: 11px;
 }
 
-.booking__fieldset-input_style-shrink {
-    width: 134px;
-    max-height: 52px;
+.booking__fieldset-wrap-name-tel {
+    display: flex;
+    flex-basis: 300px;
+    flex-direction: column;
+    gap: 14px; 
 }
 
+.booking__fieldset-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
 
-.booking__fieldset-all-wrap {
+.booking__fieldset-wrap-name-tel_style-basis {
+    flex-basis: 280px;
+}
+
+.booking__button {
+    color: #6C0287;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 16px 50px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    max-width: 280px;
+}
+
+.booking-wrap-all {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: flex-end ;
 }
+
 .footer {
     background: linear-gradient(#1B1A1B, #370A37);
     border-radius: 6px;
@@ -699,16 +688,21 @@
     padding-bottom: 10px;
 }
 
+.footer__link,
 .footer__text {
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
 }
 
-.footer__text:not(:last-child) {
+.footer__link:not(:last-child) {
     margin-bottom: 6px;
 }
 
+.footer__wrap-link {
+    display: flex;
+    flex-direction: column;
+}
 .footer__address {
     display: flex;
     flex-wrap: wrap;
