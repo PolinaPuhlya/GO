@@ -15,7 +15,8 @@
     gap: 40px;
 }
 
-.header__link-btn {
+.header__btn {
+    /* box-sizing: border-box; */
     color: #fff;
     border: solid #CD06FF 3px;
     border-radius: 10px;
@@ -25,25 +26,29 @@
     line-height: 30px;
 }
 
-.header__link-btn:hover {
+.header__btn:hover {
     background-color: #6C0287;
     border: solid 3px  #6C0287;
 }
 
-.header__link-btn:focus {
+.header__btn:focus {
     background-color: #6C0287;
-    border: none;
+    border: solid 3px  #6C0287;
 }
 
-.header__link-btn:active {
+.header__btn:active {
     background-color: #640AA3;
-    border: solid #000 1px;
+    border: solid 3px  #640AA3;
 }
 
 .menu__link {
     font-size: 22px;
     line-height: 50px;
     font-weight: 400;
+}
+
+.menu__link:hover {
+    color: #6C0287;
 }
 
 .hero__text {
@@ -129,9 +134,14 @@
     fill: #FFFFFF;
 }
 
-.hero__link:focus .hero__link-img {
-    outline-color: #CD06FF;
+.hero__link:focus-within .hero__link-img {
+    outline: 1px #CD06FF solid;
 }
+
+/* .hero__link:active .hero__link-img .hero__link:focus .hero__link-img {
+    border: 1px #CD06FF solid;
+    outline: 1px #CD06FF solid;
+} */
 
 .hero__link:active .hero__link-img {
     stroke: #fff;
@@ -141,6 +151,7 @@
 .hero__link:active .hero__svg-path:first-child {
     stroke: #CD06FF;
 }
+
 
 .hero__title {
     font-weight: 900;
@@ -279,6 +290,9 @@
     max-width: calc(50% - 20px);
     width: 100%;
 }
+.halls__item:hover {
+    color: #640AA3;
+}
 
 .halls__item_pic-80s {
     background-image: url("../images/halls/80s-vibes-bg.jpg");
@@ -359,8 +373,6 @@
     height: 55px; 
 }
 
-
-
 /* Hover */
 .booking__label-hall:hover {
     background-color: #EADEED;
@@ -368,15 +380,20 @@
 	/* color: #666; */
 }
 
-/* .booking__label-hall:focus {
+.booking__label-hall:focus-within {
     background-color: #fff;
     border: solid 3px #640AA3;
-} */
-/* Checked -работает как Focus???*/  
-.booking__radio-hall:checked + .booking__label-hall {
-	background-color: #fff;
+}
+
+.booking__radio-hall:focus-within + .booking__label-hall {
+    background-color: #fff;
     border: solid 3px #640AA3;
 }
+
+/* Checked -работает как Focus???*/  
+/* .booking__radio-hall:checked + .booking__label-hall {
+	background-color: #476ed0;
+} */
 
 .booking__label-hall:active {
     background-color: #6C0287;
@@ -385,10 +402,10 @@
 }
 
 /* Disabled */
-.booking__radio-hall:disabled + .booking__label-hall {
+/* .booking__radio-hall:disabled + .booking__label-hall {
 	background: #efefef;
 	color: #666;
-}
+} */
 
 .booking__fieldset_style-content {
     justify-content: flex-end;
@@ -486,7 +503,7 @@
     padding: 11px;
 }
 
-.booking__fieldset-input-tel:focus {
+.booking__fieldset-input:focus {
     border: solid 2px #CD06FF;
 }
 
@@ -514,12 +531,13 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 28px;
-    padding: 16px ;
+    padding: 13px 16px ;
     border-radius: 10px;
     background-color: #FFFFFF;
     text-transform: uppercase;
     max-width: 280px;
     width: 100%;
+    border: solid 3px #FFFFFF;
 }
 
 .booking__button:hover {
@@ -534,7 +552,7 @@
 
 .booking__button:active {
     background-color: #EADEED;
-    border: none;
+    border: solid 3px #EADEED;
 }
 
 .booking-wrap-all {
@@ -680,14 +698,14 @@
 }
 
 .questions__element {
+    
     font-weight: 700;
     font-size: 24px;
     line-height: 46px;
     padding: 30px 70px;
     margin-bottom: 20px;
     margin-top: 0px;
-    display: flex;
-    justify-content: space-between;
+    
 }
 
 .questions__element:nth-child(even) {
@@ -699,10 +717,32 @@
     background-color: #fff;
     color: #1C1A1A;
 }
+.questions__link {
+    display: flex;
+    justify-content: space-between;
+    /* font-weight: 700;
+    font-size: 24px;
+    line-height: 46px; */
+    /* padding: 30px 70px; */
+    /* font-size: 0;
+    line-height: 0;
+    padding:0; */
+}
+
+
+
+
+
+.questions__link:hover {
+    color: #6C0287 ;
+}
 
 .questions__link:hover .questions__svg {
     stroke: #FFFFFF;
     fill: #6C0287;
+}
+.questions__link:hover .questions__svg .questions__svg-cir {
+    stroke: #6C0287;
 }
 
 .questions__link:hover .questions__svg-white {
@@ -769,6 +809,10 @@
     display: block;
 }
 
+.list-social__link:hover .footer__link-img .footer__link-img-path {
+    /* stroke: #ffffff; */
+    fill: #CD06FF;
+}
 
 .footer {
     background: linear-gradient(#1B1A1B, #370A37);
