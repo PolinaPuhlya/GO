@@ -380,20 +380,33 @@
 	/* color: #666; */
 }
 
-.booking__label-hall:focus-within {
+
+
+
+
+
+/* .booking__label-hall:focus-within {
+    background-color: #fff;
+    border: solid 3px #640AA3;
+} */
+
+.booking__radio-hall:focus + .booking__label-hall {
     background-color: #fff;
     border: solid 3px #640AA3;
 }
 
-.booking__radio-hall:focus-within + .booking__label-hall {
+.booking__label-hall:focus  {
     background-color: #fff;
     border: solid 3px #640AA3;
 }
+
+
+
 
 /* Checked -работает как Focus???*/  
-/* .booking__radio-hall:checked + .booking__label-hall {
-	background-color: #476ed0;
-} */
+.booking__radio-hall:checked + .booking__label-hall {
+	background-color: #b76bed;
+}
 
 .booking__label-hall:active {
     background-color: #6C0287;
@@ -729,14 +742,6 @@
     padding:0; */
 }
 
-
-
-
-
-.questions__link:hover {
-    color: #6C0287 ;
-}
-
 .questions__link:hover .questions__svg {
     stroke: #FFFFFF;
     fill: #6C0287;
@@ -810,7 +815,18 @@
 }
 
 .list-social__link:hover .footer__link-img .footer__link-img-path {
-    /* stroke: #ffffff; */
+    fill: #EADEED;
+}
+
+.list-social__link:focus .footer__link-img .footer__link-img-path {
+    fill: #EADEED;
+}
+
+.list-social__link:focus .footer__link-img {
+    outline: solid 1px #CD06FF;
+}
+
+.list-social__link:active .footer__link-img .footer__link-img-path {
     fill: #CD06FF;
 }
 
@@ -852,4 +868,8 @@
     width: calc(100% - 500px);
     object-fit: cover;
     object-position: left;
+}
+
+.footer__contact:hover {
+    color: #CD06FF;
 }

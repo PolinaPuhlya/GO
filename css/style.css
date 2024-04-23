@@ -93,7 +93,7 @@ iframe {
 }
 
 
-a,svg:focus { 
+/* a,svg:focus { 
     outline: transparent;
     font-weight: 700; 
 }
@@ -101,5 +101,4 @@ a,svg:focus {
 input:focus,
 button:focus {
     outline:transparent;
-    /* font-weight: 900;  */
-}
+} */
