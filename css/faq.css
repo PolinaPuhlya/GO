@@ -848,6 +848,10 @@
     margin-bottom: 6px;
 }
 
+.footer__link:hover {
+    color: #6C0287;
+}
+
 .footer__wrap-link {
     display: flex;
     flex-direction: column;
