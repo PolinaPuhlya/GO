@@ -24,6 +24,8 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 30px;
+    transition-duration: 2s;
+    transition-property: background-color, border;
 }
 
 .header__btn:hover {
@@ -45,6 +47,8 @@
     font-size: 22px;
     line-height: 50px;
     font-weight: 400;
+    transition-duration: 2s;
+    transition-property: color;
 }
 
 .menu__link:hover {
@@ -99,6 +103,9 @@
     text-transform: uppercase;
     position: relative;
     z-index: 10;
+    transition-duration: 2s;
+    transition-property: background-color;
+    transition-timing-function: ease;
 }
 
 .hero__link-booking:hover {
@@ -122,7 +129,12 @@
 }
 
 .hero__link-img {
-    outline: 1px solid transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    outline: 1px solid transparent;    
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    transition-property: stroke, outline, background-color;
 }
 
 .hero__link .hero__link-img {
@@ -130,28 +142,20 @@
 }
 
 .hero__link:hover .hero__link-img {
+    background-color: #FFFFFF;
     stroke: #6C0287;
-    fill: #FFFFFF;
 }
 
-.hero__link:focus-within .hero__link-img {
-    outline: 1px #CD06FF solid;
+.hero__link:focus .hero__link-img {
+    outline:#CD06FF solid 1px;
+    /* outline-offset: 3px;  */
 }
-
-/* .hero__link:active .hero__link-img .hero__link:focus .hero__link-img {
-    border: 1px #CD06FF solid;
-    outline: 1px #CD06FF solid;
-} */
 
 .hero__link:active .hero__link-img {
+    background-color: #CD06FF;
+    border: #CD06FF;
     stroke: #fff;
-    fill: #CD06FF;
 }
-
-.hero__link:active .hero__svg-path:first-child {
-    stroke: #CD06FF;
-}
-
 
 .hero__title {
     font-weight: 900;
@@ -241,6 +245,15 @@
     background-position: center;
     height: 228px;
     padding: 166px 40px 6px ;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    transition-property: transform, box-shadow;
+}
+
+.rest__item:hover .rest__img {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px 1px rgba(253, 253, 253, 0.2),
+                -1px -1px 5px 1px rgba(255, 255, 255, 0.2);
 }
 
 .rest__img_pic-vr {
@@ -289,7 +302,10 @@
     background-size: cover;
     max-width: calc(50% - 20px);
     width: 100%;
+    transition-duration: 2s;
+    transition-property: color;
 }
+
 .halls__item:hover {
     color: #640AA3;
 }
@@ -371,6 +387,8 @@
 	user-select: none;
     width: 250px;
     height: 55px; 
+    transition-duration: 2s;
+    transition-property: background-color, border;
 }
 
 /* Hover */
@@ -379,11 +397,6 @@
     border: solid 3px #640AA3;
 	/* color: #666; */
 }
-
-
-
-
-
 
 /* .booking__label-hall:focus-within {
     background-color: #fff;
@@ -399,8 +412,6 @@
     background-color: #fff;
     border: solid 3px #640AA3;
 }
-
-
 
 
 /* Checked -работает как Focus???*/  
@@ -450,6 +461,8 @@
     height: 27px;
     margin-right: 12px;
     vertical-align:bottom;
+    transition-duration: 2s;
+    transition-property: outline;
 }
 
 .booking__radio-games:focus, .booking__checkbox-games:focus {
@@ -462,6 +475,8 @@
     margin-right: 12px;
     display: inline-block;  /* нужно ли это св-во оставить??? без него ничего не меняется */
     vertical-align: bottom;
+    transition-duration: 2s;
+    transition-property: outline;
 }
 
 .booking__fieldset_style-center {
@@ -514,6 +529,8 @@
     width: 100%;
     resize: none;
     padding: 11px;
+    transition-duration: 2s;
+    transition-property: border;
 }
 
 .booking__fieldset-input:focus {
@@ -551,6 +568,8 @@
     max-width: 280px;
     width: 100%;
     border: solid 3px #FFFFFF;
+    transition-duration: 2s;
+    transition-property: background-color, border;
 }
 
 .booking__button:hover {
@@ -718,7 +737,6 @@
     padding: 30px 70px;
     margin-bottom: 20px;
     margin-top: 0px;
-    
 }
 
 .questions__element:nth-child(even) {
@@ -733,35 +751,48 @@
 .questions__link {
     display: flex;
     justify-content: space-between;
-    /* font-weight: 700;
-    font-size: 24px;
-    line-height: 46px; */
-    /* padding: 30px 70px; */
-    /* font-size: 0;
-    line-height: 0;
-    padding:0; */
 }
+
+.questions__svg {
+    border: 2px solid #6C0287;
+    border-radius: 50%;
+}
+
+.questions__svg-white {
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.questions__svg,
+.questions__svg-path,
+.questions__svg-white {
+    transition-duration: 3s;
+    transition-property: stroke, fill, outline, background-color, border;
+}
+
 
 .questions__link:hover .questions__svg {
     stroke: #FFFFFF;
-    fill: #6C0287;
-}
-.questions__link:hover .questions__svg .questions__svg-cir {
-    stroke: #6C0287;
+    background-color: #6C0287;
+    border: #FFFFFF ;
 }
 
 .questions__link:hover .questions__svg-white {
-    fill:#FFFFFF;
+    background-color:#FFFFFF;
     stroke: #6C0287;
+    border: #6C0287;
 }
 
 .questions__link:active .questions__svg .questions__svg-path{
     stroke: #6C0287;
     outline: transparent;
+    /* border: #6C0287; */
 }
 
 .questions__link:active .questions__svg-white .questions__svg-path {
     stroke: #FFFFFF;
+    outline: transparent;
+    /* border:#FFFFFF ; */
 }
 
 .footer__contact {
@@ -814,8 +845,14 @@
     display: block;
 }
 
+.footer__link-img,
+.footer__link-img-path {
+    transition-duration: 2s;
+    transition-property: fill, outline;
+}
+
 .list-social__link:hover .footer__link-img .footer__link-img-path {
-    fill: #EADEED;
+    fill: #cd73e4;
 }
 
 .list-social__link:focus .footer__link-img .footer__link-img-path {
@@ -848,6 +885,11 @@
     margin-bottom: 6px;
 }
 
+.footer__link {
+    transition-duration: 2s;
+    transition-property: color;
+}
+
 .footer__link:hover {
     color: #6C0287;
 }
@@ -872,6 +914,11 @@
     width: calc(100% - 500px);
     object-fit: cover;
     object-position: left;
+}
+
+.footer__contact {
+    transition-duration: 2s;
+    transition-property: color;
 }
 
 .footer__contact:hover {
