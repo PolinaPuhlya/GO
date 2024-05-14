@@ -126,13 +126,15 @@
     transform: translateX(-50%);
     bottom: 90px;
     z-index: 3;
-    width: 97px;
-    height: 97px;
+    /* font-size: 0; */
+    line-height: 0.6;
+    display: block;
 }
 
 .hero__link-img {
     border: 1px solid #FFFFFF;
     border-radius: 50%;
+    display: inline-block;
     outline: 1px solid transparent;    
     transition-timing-function: ease;
     transition-duration: 0.3s;
@@ -148,7 +150,11 @@
     stroke: #6C0287;
 }
 
-.hero__link:focus {
+/* .hero__link:focus .hero__link-img {
+    outline:#CD06FF solid 1px;
+} */
+
+.hero__link:focus  {
     outline:#CD06FF solid 1px;
 }
 
