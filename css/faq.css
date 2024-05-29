@@ -17,8 +17,8 @@
 
 .header__btn {
     /* box-sizing: border-box; */
-    color: var(--main-color, #FFFFFF);
-    border: solid var(--color-pink, #CD06FF) 3px;
+    color: var(--white-900, #FFFFFF);
+    border: solid var(--fuchsia-900, #CD06FF) 3px;
     border-radius: 10px;
     padding: 12px 32px 13px;
     font-size: 22px;
@@ -30,18 +30,18 @@
 }
 
 .header__btn:hover {
-    background-color: var(--color-purple, #6C0287 );
-    border: solid 3px  var(--color-purple, #6C0287 );
+    background-color: var(--magenta-900, #6C0287);
+    border: solid 3px  var(--magenta-900, #6C0287);
 }
 
 .header__btn:focus {
-    background-color:  var(--color-purple, #6C0287 );;
-    border: solid 3px   var(--color-purple, #6C0287 );;
+    background-color:  var(--magenta-900, #6C0287);
+    border: solid 3px   var(--magenta-900, #6C0287);
 }
 
 .header__btn:active {
-    background-color: #640AA3;
-    border: solid 3px  #640AA3;
+    background-color:var(--darkmagenta-700, #640AA3);
+    border: solid 3px var(--darkmagenta-700, #640AA3);
 }
 
 .menu__link {
@@ -53,7 +53,7 @@
 }
 
 .menu__link:hover {
-    color:  var(--color-purple, #6C0287 );;
+    color:  var(--magenta-900, #6C0287);
 }
 
 .hero__text {
@@ -71,13 +71,13 @@
     font-size: 100px;
     font-weight: 900;
     line-height: 141.02px;
-    color: var(--color-pink, #CD06FF);
+    color: var(--fuchsia-900, #CD06FF);
 }
 
 .hero__text-size {
     font-size: 75px;
     line-height: 105.76px;
-    color: var(--color-pink, #CD06FF);
+    color: var(--fuchsia-900, #CD06FF);
     font-weight: 900;
     font-variant-caps: all-small-caps;
 }
@@ -92,8 +92,8 @@
 }
 
 .hero__link-booking {
-    color: var(--main-color, #FFFFFF);
-    background-color: var(--color-purple, #6C0287);
+    color: var(--white-900, #FFFFFF);
+    background-color: var(--magenta-900, #6C0287);
     box-shadow: 3px 3px 5px 5px rgba(68, 15, 81, 0.6),
                 -3px -3px 5px 5px rgba(68, 15, 81, 0.6);
     border-radius: 10px;
@@ -110,15 +110,15 @@
 }
 
 .hero__link-booking:hover {
-    background-color: #840AA3;
+    background-color: var(--darkmagenta-900, #840AA3);
 }
 
 .hero__link-booking:focus {
-    background-color: #840AA3;
+    background-color: var(--darkmagenta-900, #840AA3);
 }
 
 .hero__link-booking:active {
-    background-color: #640AA3;
+    background-color: var(--darkmagenta-700, #640AA3);
 }
 
 .hero__link {
@@ -133,7 +133,7 @@
 }
 
 .hero__link-img {
-    border: 1px solid var(--main-color, #FFFFFF);
+    border: 1px solid var(--white-900, #FFFFFF);
     border-radius: 50%;
     display: inline-block;
     outline: 1px solid transparent;    
@@ -143,12 +143,12 @@
 }
 
 .hero__link .hero__link-img {
-    stroke: var(--main-color, #FFFFFF);
+    stroke: var(--white-900, #FFFFFF);
 }
 
 .hero__link:hover .hero__link-img {
-    background-color: var(--main-color, #FFFFFF);
-    stroke: var(--color-purple, #6C0287 );
+    background-color: var(--white-900, #FFFFFF);
+    stroke: var(--magenta-900, #6C0287);
 }
 
 /* .hero__link:focus .hero__link-img {
@@ -156,13 +156,13 @@
 } */
 
 .hero__link:focus  {
-    outline:var(--color-pink, #CD06FF) solid 1px;
+    outline: var(--fuchsia-900, #CD06FF) solid 1px;
 }
 
 .hero__link:active .hero__link-img {
-    background-color: var(--color-pink, #CD06FF);
-    border: var(--color-pink, #CD06FF);
-    stroke: var(--main-color, #FFFFFF);
+    background-color: var(--fuchsia-900, #CD06FF);
+    border: var(--fuchsia-900, #CD06FF);
+    stroke: var(--white-900, #FFFFFF);
 }
 
 .hero__title {
@@ -335,7 +335,7 @@
 }
 
 .halls__item:hover {
-    color: #640AA3;
+    color: var(--darkmagenta-700, #640AA3);
 }
 
 .halls__item_pic-80s {
@@ -366,7 +366,7 @@
 }
 
 .booking {
-    background-color: #440F51;
+    background-color: var(--purple-900, #440F51);
     padding: 80px 0;
 }
 
@@ -409,8 +409,8 @@
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
-    color: #000000;
-    background-color: #fff;
+    color: var(--black-900,#000000);
+    background-color: var(--white-900, #FFFFFF);
 	border-radius: 8px;
 	user-select: none;
     width: 250px;
@@ -421,8 +421,8 @@
 
 /* Hover */
 .booking__label-hall:hover {
-    background-color: #EADEED;
-    border: solid 3px #640AA3;
+    background-color: var(--pink-300, #EADEED);
+    border: solid 3px var(--darkmagenta-700, #640AA3);
 	/* color: #666; */
 }
 
@@ -432,25 +432,25 @@
 } */
 
 .booking__radio-hall:focus + .booking__label-hall {
-    background-color: var(--main-color, #FFFFFF);
-    border: solid 3px #640AA3;
+    background-color: var(--white-900, #FFFFFF);
+    border: solid 3px var(--darkmagenta-700, #640AA3);
 }
 
 .booking__label-hall:focus  {
-    background-color: var(--main-color, #FFFFFF);
-    border: solid 3px #640AA3;
+    background-color: var(--white-900, #FFFFFF);
+    border: solid 3px var(--darkmagenta-700, #640AA3);
 }
 
 
 /* Checked -работает как Focus???*/  
 .booking__radio-hall:checked + .booking__label-hall {
-	background-color: #b76bed;
+	background-color: var(--darkviolet-500, #b76bed);
 }
 
 .booking__label-hall:active {
-    background-color: var(--color-purple, #6C0287 );
-    color: var(--main-color, #FFFFFF);
-    border: solid 3px var(--main-color, #FFFFFF);
+    background-color: var(--magenta-900, #6C0287 );
+    color: var(--white-900, #FFFFFF);
+    border: solid 3px var(--white-900, #FFFFFF);
 }
 
 /* Disabled */
@@ -494,7 +494,7 @@
 }
 
 .booking__radio-games:focus, .booking__checkbox-games:focus {
-    outline: solid 1px var(--color-pink, #CD06FF);
+    outline: solid 1px var(--fuchsia-900, #CD06FF);
 }
 
 .booking__checkbox-games {
@@ -563,7 +563,7 @@
 
 .booking__fieldset-input:focus {
     /* border: solid 2px #CD06FF; */
-    outline: solid 2px var(--color-pink, #CD06FF);
+    outline: solid 2px var(--fuchsia-900, #CD06FF);
 }
 
 .booking__fieldset-wrap-name-tel {
@@ -586,34 +586,34 @@
 }
 
 .booking__button {
-    color: var(--color-alt, #6C0287);
+    color: var(--magenta-900, #6C0287);
     font-size: 22px;
     font-weight: 700;
     line-height: 28px;
     padding: 13px 16px ;
     border-radius: 10px;
-    background-color: var(--main-color, #FFFFFF);
+    background-color: var(--white-900, #FFFFFF);
     text-transform: uppercase;
     max-width: 280px;
     width: 100%;
-    border: solid 3px var(--main-color, #FFFFFF);
+    border: solid 3px var(--white-900, #FFFFFF);
     transition-duration: 0.3s;
     transition-property: background-color, border;
 }
 
 .booking__button:hover {
-    background-color: #EADEED;
-    border: solid 3px var(--color-purple, #6C0287 );
+    background-color: var(--pink-300, #EADEED);
+    border: solid 3px var(--magenta-900, #6C0287);
 }
 
 .booking__button:focus {
-    background-color: var(---main-color, #FFFFFF);
-    border: solid 3px var(--color-purple, #6C0287 );
+    background-color: var(--white-900, #FFFFFF);
+    border: solid 3px var(--magenta-900, #6C0287);
 }
 
 .booking__button:active {
-    background-color: #EADEED;
-    border: solid 3px #EADEED;
+    background-color: var(--pink-300, #EADEED);
+    border: solid 3px var(--pink-300, #EADEED);
 }
 
 .booking-wrap-all {
@@ -660,7 +660,7 @@
 .about__quote::after {
     content: ' ” ';
     font-weight: 900;
-    color: var(--color-purple, #6C0287 );
+    color: var(--magenta-900, #6C0287);
 }
 
 .about__quote::before {
@@ -669,7 +669,7 @@
     left: 0;
     top: -8px;
     font-weight: 900;
-    color: var(--color-purple, #6C0287 );
+    color: var(--magenta-900, #6C0287);
 }
 
 .about__autor {
@@ -777,7 +777,7 @@
     position: absolute; 
     top: 0;      
 	left: 0;
-    background-image: radial-gradient(circle, #C4C4C4 0%, #6C0287 65%);
+    background-image: radial-gradient(circle, var(--gray-300, #C4C4C4) 0%, var(--magenta-900, #6C0287) 65%);
     opacity: 0.4;
 }
 
@@ -791,13 +791,13 @@
 }
 
 .questions__element:nth-child(even) {
-    color: var(--main-color, #FFFFFF) ;
-    background-color: #440f51 ;
+    color: var(--white-900, #FFFFFF) ;
+    background-color: var(--purple-900, #440F51);
 }
 
 .questions__element:nth-child(odd) {
-    background-color: var(--main-color, #FFFFFF);
-    color: #1C1A1A;
+    background-color: var(--white-900, #FFFFFF);
+    color: var(--gray-800, #1C1A1A);
 }
 .questions__link {
     display: flex;
@@ -805,12 +805,12 @@
 }
 
 .questions__svg {
-    border: 2px solid var(--color-purple, #6C0287 );
+    border: 2px solid var(--magenta-900, #6C0287);
     border-radius: 50%;
 }
 
 .questions__svg-white {
-    border: 2px solid var(--main-color, #FFFFFF);
+    border: 2px solid var(--white-900, #FFFFFF);
     border-radius: 50%;
 }
 
@@ -823,25 +823,25 @@
 
 
 .questions__link:hover .questions__svg {
-    stroke: var(--main-color, #FFFFFF);
-    background-color: var(--color-purple, #6C0287 );
-    border: var(--main-color, #FFFFFF) ;
+    stroke: var(--white-900, #FFFFFF);
+    background-color: var(--magenta-900, #6C0287);
+    border: var(--white-900, #FFFFFF) ;
 }
 
 .questions__link:hover .questions__svg-white {
-    background-color:var(--main-color, #FFFFFF);
-    stroke: var(--color-purple, #6C0287 );
-    border: var(--color-purple, #6C0287 );
+    background-color: var(--white-900, #FFFFFF);
+    stroke: var(--magenta-900, #6C0287);
+    border: var(--magenta-900, #6C0287);
 }
 
 .questions__link:active .questions__svg .questions__svg-path{
-    stroke: var(--color-purple, #6C0287 );
+    stroke: var(--magenta-900, #6C0287);
     outline: transparent;
     /* border: #6C0287; */
 }
 
 .questions__link:active .questions__svg-white .questions__svg-path {
-    stroke: var(--main-color, #FFFFFF);
+    stroke: var(--white-900, #FFFFFF);
     outline: transparent;
     /* border:#FFFFFF ; */
 }
@@ -903,23 +903,23 @@
 }
 
 .list-social__link:hover .footer__link-img .footer__link-img-path {
-    fill: #cd73e4;
+    fill: var(--fuchsia-300, #cd73e4);
 }
 
 .list-social__link:focus .footer__link-img .footer__link-img-path {
-    fill: #EADEED;
+    fill: var(--pink-300, #EADEED);
 }
 
 .list-social__link:focus .footer__link-img {
-    outline: solid 1px var(--color-pink, #CD06FF);
+    outline: solid 1px var(--fuchsia-900, #CD06FF);
 }
 
 .list-social__link:active .footer__link-img .footer__link-img-path {
-    fill: var(--color-pink, #CD06FF);
+    fill: var(--fuchsia-900, #CD06FF);
 }
 
 .footer {
-    background: linear-gradient(#1B1A1B, #370A37);
+    background: linear-gradient(var(--black-800, #1B1A1B), var(--darkpurple-900, #370A37));
     border-radius: 6px;
     height: 100%;
     padding-bottom: 10px;
@@ -942,7 +942,7 @@
 }
 
 .footer__link:hover {
-    color: var(--color-purple, #6C0287 );
+    color: var(--magenta-900, #6C0287);
 }
 
 .footer__wrap-link {
@@ -972,6 +972,6 @@
     transition-property: color;
 }
 
-.footer__contact:hover {
-    color: var(--color-pink, #CD06FF);
+.footer__contact:not(:first-child):hover {
+    color: var(--fuchsia-900, #CD06FF);
 }

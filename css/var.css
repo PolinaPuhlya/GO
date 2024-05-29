@@ -1,7 +1,19 @@
 :root {
-    --main-color: #FFFFFF;
+    --white-900: #FFFFFF;
     --bg-color: #1B1A1B;
-    --color-purple: #6C0287;
-    --color-pink: #CD06FF;
+    --magenta-900: #6C0287;
+    --fuchsia-900: #CD06FF;
+    --pink-300: #EADEED;
+    --darkmagenta-900: #840AA3;
+    --darkmagenta-700: #640AA3;
+    --black-900: #000000;
+    --gray-300: #c4c4c4;
+    --fuchsia-300: #CD73e4;
+    --darkviolet-500: #b76bed;
+    --purple-900: #440F51;
+    --gray-800: #1C1A1A;
+    --black-800: #1B1A1B;
+    --darkpurple-900: #370A37;
+
 }
 
